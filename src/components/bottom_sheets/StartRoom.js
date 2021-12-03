@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import style from "../../style/bottomSheet.module.css";
 import { FcGlobe } from "react-icons/fc";
 
@@ -7,7 +7,7 @@ function StartRoom(props) {
     return (
         <>
         <div className={style.switch_Line}></div>
-        <div className='text-right'>
+        <div className="text-end">
             <button className={style.addTopicBtn}>
                 + Add a topic
             </button>
@@ -20,6 +20,7 @@ function StartRoom(props) {
             </div>
             Open
             </button>
+
        <button className={room == "social" ? style.active : "" }
        onClick={() => setRoom("social")}>
             <div>
@@ -27,6 +28,7 @@ function StartRoom(props) {
             </div>
             Social
        </button>
+
        <button className={room == "closed" ? style.active : "" }
        onClick={() => setRoom("closed")}>
             <div>
@@ -34,6 +36,21 @@ function StartRoom(props) {
             </div>
             Closed
        </button>
+
+        </div>
+        <p>Start a room <span>
+            {room == "closed" ? "for people I chose" :
+             room == "social" ? "With people I follow" : 
+            "open to everyone"}</span>
+        </p>
+
+        <div className="text-center">
+            <button
+            className={style.letGoBtn}
+            onClick={() => {
+                props.setSheetCreateRoom(true);
+                props.setSheetVisible(true);
+            }}>🎉Let's Go</button>
         </div>
         </>
     )

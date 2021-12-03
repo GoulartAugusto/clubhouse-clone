@@ -14,7 +14,7 @@
     margin-left: auto;
 }
 
-.home_container + .action_btn {
+.home_container + .action_btn button {
     font-size: 1.3em;
 }
 
@@ -26,7 +26,7 @@
     left: 0;
     right: 0;
     top: 0;
-    background-image: linear-gradient(transparent 20%, #f2f0e4) 80%;
+    background-image: linear-gradient(transparent 20%, #f2f0e4 80%);
     bottom: 0;
 }
 

@@ -23,7 +23,7 @@
 }
 
 ;.dailyCard span {
-    font-size: 0.75em;
+    font-size: 0.675em;
     color: var(--textColor);
     font-weight: 500;
 }
