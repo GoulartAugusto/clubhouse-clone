@@ -67,11 +67,9 @@ function Home() {
             sheetVisible={sheetCreateRoom}
             cardDetail={newRoomData}
             setItemsVisible={(item) => setItemsVisible(item)}
-            />
-        
-        
+            />       
         </>
-    )
+    );
 }
 
 export default Home
