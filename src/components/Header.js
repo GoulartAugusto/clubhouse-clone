@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import style from "../style/header.module.css";
 
+
+
 function Header() {
     return (
         <div className={style.Header}>
@@ -12,18 +14,18 @@ function Header() {
                 <Link exact to="/friend_invite">
                     <img src="/images/invite.png" alt="" />
                 </Link>
-            </div>
-            <div>
+            
+            
                 <Link exact to="/upcoming">
                     <img src="/images/calendar.png" alt="" />
                 </Link>
-            </div>
-            <div>
+            
+        
                 <Link exact to="/activity">
                     <img src="/images/noti.png" alt="" />
                 </Link>
-            </div>
-            <div>
+            
+        
                 <Link exact to="/profile">
                     <img src="/images/b1.png" alt="" />
                 </Link>
@@ -34,3 +36,4 @@ function Header() {
 }
 
 export default Header
+
