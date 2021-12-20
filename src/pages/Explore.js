@@ -3,6 +3,8 @@ import style from "../style/explore.module.css";
 import { Input } from "antd";
 import { DownOutlined, FireOutlined } from "@ant-design/icons";
 import data from "../data/Explore.json";
+import SubHeader from "../components/SubHeader";
+
 
 function Explore() {
     const { people, conversation } = data;
@@ -11,7 +13,8 @@ function Explore() {
         
         <div className={style.exploreContainer}>
                 <div className={style.header}>
-                    
+                    <SubHeader pageTitle="EXPLORE" />
+
                     <Input style={{
                         backgroundColor: "#f4f4f4",
                         borderRadius: "0.8em",
@@ -22,10 +25,9 @@ function Explore() {
                         size="large"
                         placeholder="Find People and Clubs"
                         prefix={<img src="images/search.png" width="15px" />}
-                        >
-                        </Input>
+                        ></Input>
                 </div>
-            <h6>People to Follow</h6>
+            <h6>PEOPLE TO FOLLOW</h6>
             <div className={style.peopleContainer}>
                 {people.map((item) => (
                     <div>
