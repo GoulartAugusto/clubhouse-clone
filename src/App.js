@@ -29,6 +29,7 @@ function App() {
       <Route path="/explore" element={<Explore />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/activity" element={<Activity />} />
+      <Route path="/upcoming" element={<Upcoming />} />
       </Routes>
       </AppLayout>
       </BrowserRouter>
