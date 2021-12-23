@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import data from "../data/Activity.json";
-import style from "../style/activity.explore.module.css";
+import style from "../style/activity.module.css";
+import SubHeader from "../components/SubHeader";
 
 function Activity() {
     const { id, image, title, description, time } = data;
@@ -9,14 +10,8 @@ function Activity() {
     return (
     <>
     <div className={style.activityContainer}>
-        <div className={style.activityHeader}>
-            <Link to="/home">
-                <img src="/images/arrow.png" alt="" className={style.arrow_icon} />
-            </Link>
-        <div>
-            <p>Activity</p>
-        </div>
-        </div>
+        <SubHeader pageTitle="Activity" />
+
         <div>
             <div className={style.infoContainer}>
                 {data.map((item) => (

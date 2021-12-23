@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Explore from "./pages/Explore";
 import Profile from "./pages/Profile";
 import Activity from "./pages/Activity";
+import Upcoming from "./pages/Upcoming";
 
 function App() {
   return (
