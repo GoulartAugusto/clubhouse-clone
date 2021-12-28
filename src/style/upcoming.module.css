@@ -67,3 +67,29 @@
     background-color: transparent;
     border: none;
 }
+
+.switch_Line {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 35px;
+    background-color: #cccccc;
+}
+
+.JoinBtn {
+    font-size: 1.3em;
+    font-weight: 500;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    background-color: #28ae61;
+    padding: 0.3em 2em;
+    text-align: center;
+}
+
+.UpcomingSheetContainer {  
+    height: auto;
+
+}

@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import style from "../style/upcoming.module.css";
 import data from "../data/UpcomingCard.json";
 import { AiOutlineBell, AiOutlineCalendar } from "react-icons/ai";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import UpcomingSheet from '../components/UpcomingSheet';
 
 
 function Upcoming() {
-    const { time, title, description, images } = data;
+    const [ time, title, description, images ] = data;
+    const [ itemsVisible, setItemsVisible] = useState(true);
+    const [ sheetVisible, setSheetVisible] = useState(false);
+
 
     return (
 
@@ -14,8 +18,8 @@ function Upcoming() {
         <div className={style.header}>
             <Link to="/home"><img src="/images/arrow.png" /></Link>
             <h2>UPCOMING FOR YOU</h2>
-            <button>
-                <AiOutlineCalendar size={30} />
+            <button onClick={() => setSheetVisible(true)}>
+                <AiOutlineCalendar size={25} />
             </button>    
         </div>
 
@@ -42,13 +46,13 @@ function Upcoming() {
                         <p>{item.description}</p>
                     </div>
                 ))}
-
-            
-
             </div>
-
-
         </div>
+        <UpcomingSheet
+            sheetTitle="upcoming detail"
+            setSheetVisible={(item) => setSheetVisible(item)}
+            sheetVisible={sheetVisible}
+            setItemsVisible={(item) => setItemsVisible(item)} />
         </>
     )
 }

@@ -1,13 +1,18 @@
 import React from 'react'
-import style from "../../style/bottomSheet.module.css";
-import data from "../../data/UpcomingCard.json";
-import { AiOutlineBell } from "react-icons/ai";
-import style from "../../style/explore.module.css";
+import style from "../../style/upcoming.module.css";
+import data from "../../data/UpcomingCard02.json";
+import { AiOutlineBell, AiOutlineCopy, AiOutlineTwitter } from "react-icons/ai";
+import { FiShare } from "react-icons/fi";
+import {Link} from "react-router-dom"
+
+
 
 function UpcomingInfo(props) {
-    const { time, title, description, images } = data;
+    const [ time, title, description, images ] = data;
+
     return (
         <>
+        <div className={style.UpcomingSheetContainer}>
         <div className={style.switch_Line}></div>
         <div className={style.SubjectsInfo}>
 
@@ -26,12 +31,14 @@ function UpcomingInfo(props) {
                 <p>{item.description}</p>
             </div>
         ))}
-
-
-
         </div>
-        
+        <p><a href="">
+            <FiShare /> share <AiOutlineTwitter />Tweet <AiOutlineCopy />Copy Link <AiOutlineCopy />Add to Call
+        </a></p>
+        <button onClick={"/home"} className={style.JoinBtn}>Join the room in progress</button>
+        </div>
         </>
+
     )
 }
 
