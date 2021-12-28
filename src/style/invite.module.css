@@ -1,0 +1,56 @@
+.header {
+    align-items: baseline;
+    display: flex;
+    padding: 0.5em;
+    justify-items: center;
+
+}
+
+.header img {
+    width: 15px;
+    margin-left: 0.5em;
+}
+
+.header h2 {
+    font-style: 0.875em;
+    margin-left: 2em;
+}
+
+.InviteContainer {
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+
+.InviteContainer h1 {
+    text-align: center;
+    font-style: normal;
+    font-size: 1em;
+    max-width: 300px;
+    margin: 5em;
+    margin-left: 7em;
+}
+
+.InviteContainer .PhoneNumber {
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+    margin-left: 10em;
+    padding-left: 8em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.InviteContainer .CodeBtn {
+    font-size: 1.3em;
+    font-weight: 500;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    background-color: #28ae61;
+    padding: 0.3em 2em;
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 8em;
+}

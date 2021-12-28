@@ -14,7 +14,7 @@ function UpcomingSheet(props) {
         props.setSheetVisible(!props.sheetVisible);
         props.setItemsVisible(true);
     }}
-    fullScreen={props.sheetTitle == "upcoming detail" ? true: false}
+    fullScreen={props.sheetTitle == "room detail" ? true: false}
     >
         <div
             className={style.upcomingsheetContainer}

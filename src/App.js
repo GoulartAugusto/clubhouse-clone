@@ -11,6 +11,7 @@ import Explore from "./pages/Explore";
 import Profile from "./pages/Profile";
 import Activity from "./pages/Activity";
 import Upcoming from "./pages/Upcoming";
+import Invite from "./pages/Invite";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/activity" element={<Activity />} />
       <Route path="/upcoming" element={<Upcoming />} />
+      <Route path="/friend_invite" element={<Invite />} />
       </Routes>
       </AppLayout>
       </BrowserRouter>

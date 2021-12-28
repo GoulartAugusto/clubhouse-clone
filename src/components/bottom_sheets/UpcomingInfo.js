@@ -32,10 +32,10 @@ function UpcomingInfo(props) {
             </div>
         ))}
         </div>
-        <p><a href="">
+        <p><a href="/home">
             <FiShare /> share <AiOutlineTwitter />Tweet <AiOutlineCopy />Copy Link <AiOutlineCopy />Add to Call
         </a></p>
-        <button onClick={"/home"} className={style.JoinBtn}>Join the room in progress</button>
+        <button className={style.JoinBtn}>Join the room in progress</button>
         </div>
         </>
 
